@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+
+div {
+	padding:5px;
+	border-radius:5px;
+}
+
+/* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
+#wrapper {
+	width: 900px;
+	margin:0 auto;    /* centers wrapper */
+}
+
+body {
+    text-align: center;
+    background-color: #D4F2EE; /* background color */
+	color: black;          /* text color for the entire page */
+	font-size: 15px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+h1 { 
+	padding:9px;
+	margin: 0 0 25px 0;
+	text-align:center;     /* centers h1 content */
+	background: #0EE9E8;
+	color: black;       /* Text color for the h1*/
+	border-radius:5px;
+	font-weight: bold;
+
+}
+
+h2{ 
+	text-align:center;     /* centers h2 content */
+	background: #0EE9E8;
+	color: black;       /*Text color for h2*/
+	border-radius:5px;
+}
+
+
+a {
+    padding: 15px;
+    margin: 3px;
+    font-size: 115%;
+    background-color:  #F8CBE7; 
+    color:  #030202; 
+	border-radius: 5px;
+}
+
+a:hover {
+    font-size:120%;
+	font-weight: bold;
+    background-color: #F0C2ED; 
+    color: #030202; 
+	border-radius:5px;
+}
+
+.body 
+{background-color: aliceblue;
+padding:9px;
+justify-content: center;
+}
