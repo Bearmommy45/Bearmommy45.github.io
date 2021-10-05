@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quiz</title>
+<link href="css/lab3.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+	$(function(){
+	
+		$("#option1").click( function(){
+        $("#feedback").html("<h2 style='color:purple'> The sifter is used to get the lumps out of the cake mix. </h2> ");
+        $("#tools2").css("display","none");
+		});
+
+	 	$("#option2").click( function(){
+        $("#feedback").html("<h2 style='color:white'> Correct! The rubber spatula is used to scrape the sides of the bowl after mixing. </h2> <img src='img/tools2.png' width='736' height='554' alt='Baking tools Id'd'/> ");
+        $("#tools2").css("display","inline");
+		});
+
+ 		$("#option3").click( function(){
+        $("#feedback").html("<h2 style='color:purple'> The electric mixer is used to mix the ingredients together. </h2>");
+        $("#tools2").css("display","none");
+		});
+
+ 		$("#option4").click( function(){
+        $("#feedback").html("<h2 style='color:purple'> This is used to measure the liquid ingredients. </h2>");
+        $("#tools2").css("display","none");
+		});
+			
+		$("#option5").click( function(){
+        $("#feedback").html("<h2 style='color:purple'> The cake batter is poured into these pans for baking. </h2>");
+        $("#tools2").css("display","none");	
+		});
+			
+		
+	});
+
+	</script>
+	
+	
+</head>
+
+<body>
+	<h1> Cake Baking Basics </h1>
+
+	<a href="index.html"> Baking Tools</a>
+	<a href="page2.html"> Quiz</a>
+	
+	<br><br>
+
+<div id="wrapper">
+
+<div class="body">
+	<h1>Which tool would you use to scrape down the sides of the mixing bowl?</h1>
+	<h3>Click one of the following choices:</h3>
+ 
+	<h2 id="option1" class="choices"> Sifter </h2>
+	<h2 id="option2" class="choices"> Rubber Spatula </h2>
+	<h2 id="option3" class="choices"> Electric Mixer </h2>
+	<h2 id="option4" class="choices"> Liquid Measuring Cup </h2>
+	<h2 id="option5" class="choices"> 9" Cake Pans </h2>
+	
+ 
+	<div id="feedback"></div>
+	
+</div><!--body-->
+
+</div><!--wrapper-->
+	
+</body>
+</html>

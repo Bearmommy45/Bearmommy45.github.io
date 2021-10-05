@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cake Baking</title>
+<link href="../lab3/css/lab3.css" rel="stylesheet" type="text/css">
+<link href="css/lab3.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+	$(function(){
+	
+	$("#tools2").css("display","none"); // on load we hide tools 2
+	
+	$("#tools1").mouseenter( function(){ // on mouseover, we hide tools1 and show tools2
+		$("#tools1").css("display","none");
+		$("#tools2").css("display","inline");
+		$("#answer").html("");
+		});
+ 
+		$("#tools2").mouseleave( function(){ // on mouseleave we show tools1, hide toosl2 and #answer
+		$("#tools1").css("display","inline");
+		$("#tools2").css("display","none");
+		$("#answer").html("");
+		});
+	
+	});
+
+	</script>
+</head>
+
+<body>
+<h1> Cake Baking Basics </h1>
+	
+	
+	<a href="index.html"> Baking Tools</a>
+	<a href="page2.html"> Quiz </a>
+	
+	
+<br><br>
+
+<div id="wrapper">
+
+<div class="body">
+	<h2>What tools do you need to bake a cake from a mix?</h2>
+	<p>There are many fancy cake baking tools, but when using a cake mix, only six simple tools are needed. </p>
+	<p>Hover your mouse over the picture to learn the names of these baking tools.</p>
+	<img id="tools1" src="img/tools1.png" width="736" height="554" alt="baking tools"/> 
+	<img id="tools2" src="img/tools2.png" width="736" height="554" alt="baking tools"/> 
+	<div id="answer"></div>  <!-- This is a placeholder to display here the answer-->
+	
+</div><!--body-->
+
+</div><!--wrapper-->
+</body>
+</html>
