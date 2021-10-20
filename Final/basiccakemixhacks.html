@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Final Lab</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+	$(function(){
+	
+	$("#ingredients3").css("display","none"); // on load we hide ingredients3
+	
+	$("#ingredients2").mouseenter( function(){ // on mouseover, we hide ingredients2 and show ingredients3
+		$("#ingredients2").css("display","none");
+		$("#ingredients3").css("display","inline");
+		$("#answer").html("");
+		});
+ 
+		$("#ingredients3").mouseleave( function(){ // on mouseleave we show ingredients2, hide ingredients3 and #answer
+		$("#ingredients2").css("display","inline");
+		$("#ingredients3").css("display","none");
+		$("#answer").html("");
+		});
+	
+	});
+
+	</script>
+
+</head>
+	
+	
+
+<body>
+	<div class="topnav">
+	<a href="../Final/index.html"> Home </a>
+    <a href="../Final/basiccakemixhacks.html"> Basic Hacks </a>
+	<a href="../Final/cakemixcookies.html"> Cake Mix Cookies </a>
+    <a href="../Final/tipsandtricks.html"> Baking Tools & Tips  </a>
+    <a href="../Final/tutorial.html"> Cake Mix Hack Tutorial </a>
+	<a href="../Final/poll.html"> Poll </a>
+	</div>
+	
+<br><br>
+
+<div id="wrapper">
+
+<div id="mainBody">
+	<span id="content">
+	<h2>Upgrade Your Ingredients</h2>
+	<p>These simple tips will make your cake mix taste 100% homemade.</p>
+	<ul>
+	<li>Add more fat than what’s listed on the box. More fat = richer cake.</li>
+    <li>Add additional flavorings to boost your cake's flavor.</li></ul> 
+	<p>Hover your mouse over the picture to see what these bonus ingredients will do to your mix.</p>
+    </span>
+	<img id="ingredients2" src="img/ingredients2.jpg" width="736" height="554" alt="bonus ingredients"/> 
+	<img id="ingredients3" src="img/ingredients3.jpg" width="736" height="554" alt="bonus ingredients"/>
+    <div id="answer"></div><!-- This is a placeholder to display here the answer-->
+</div> <!-- mainBody -->
+
+</div><!--wrapper-->
+</body>
+</html>
